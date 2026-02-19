@@ -1,0 +1,395 @@
+/* Resetting default browser spacing */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.urgency-banner {
+    background: linear-gradient(180deg, #8b0000 0%, #660000 100%);
+    color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 2px solid #4a0000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.urgency-banner p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.count-wrapper {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Subtle pulse effect for the 'Live' feel */
+@keyframes softPulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.85; }
+    100% { opacity: 1; }
+}
+
+.count-wrapper u {
+    animation: softPulse 2s infinite ease-in-out;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .urgency-banner {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+/* Hero Section Styles */
+.hero-section {
+    background: #dcdde2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sub-headline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.main-headline {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background: linear-gradient(180deg, transparent 65%, #cce5ff 65%);
+}
+
+.cta-headline {
+    color: #0070c0;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+/* Video Mockup Styling */
+.video-container {
+    background: transparent;
+    padding: 10px;
+    /*box-shadow: 0 10px 30px rgba(0,0,0,0.1);*/
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.video-placeholder {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.vsl-thumb {
+    width: 100%;
+    display: block;
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play-circle {
+    background: rgba(0, 0, 0, 0.9);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: 4px solid #fff;
+}
+
+.play-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.play-icon {
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white;
+}
+
+.sound-notice {
+    color: #000;
+    font-weight: 400;
+    margin-top: 15px;
+    text-transform: lowercase;
+}
+
+/* Trust Logos */
+.trust-logos {
+    margin-top: 30px;
+    color: #444;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-placeholder {
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-headline { font-size: 1.8rem; }
+    .cta-headline { font-size: 1.1rem; }
+    .play-circle { width: 100px; height: 100px; }
+}
+/* Reviews Section */
+.reviews-section {
+    background-color: #dcdde2; /* Light grey background like the image */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.comment-count {
+    font-weight: bold;
+    color: #333;
+}
+
+.sort-by {
+    font-size: 12px;
+    color: #666;
+}
+
+.sort-by button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 2px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Individual Comment Styling */
+.comment {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px; /* Slightly rounded corners like the image */
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #385898; /* Facebook-style blue */
+    margin: 0 0 2px 0;
+    font-size: 14px;
+}
+
+.stars {
+    color: #f1c40f; /* Gold stars */
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.comment-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1c1e21;
+    margin: 0 0 8px 0;
+}
+
+.comment-footer {
+    font-size: 12px;
+    color: #606770;
+    cursor: pointer;
+}
+
+/* Load More Button */
+.load-more {
+    width: 100%;
+    background-color: #ebedf0;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    color: #4b4f56;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.load-more:hover {
+    background-color: #dadde1;
+}
+/* Footer Styling */
+.site-footer {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Badges */
+.security-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    opacity: 0.6;
+    filter: grayscale(100%); /* Keeps it clean and professional */
+}
+
+.badge {
+    height: 40px;
+    width: auto;
+}
+
+.copyright {
+    margin-bottom: 25px;
+}
+
+/* Disclaimer Box */
+.disclaimer-box {
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    margin: 0 auto 30px auto;
+    max-width: 800px;
+}
+
+.disclaimer-box p {
+    margin: 0;
+}
+
+/* Detailed Legal Paragraph */
+.legal-text {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Links */
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .security-badges {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .disclaimer-box {
+        padding: 10px;
+    }
+}
+/* Security Section Styling */
+.security-section {
+    background-color: #ebebeb; /* Light grey background to match image */
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+}
+
+.security-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Space between badges */
+    max-width: 1200px;
+}
+
+.badge-item img {
+    height: 45px; /* Consistent height for all logos */
+    width: auto;
+    filter: grayscale(100%); /* Matches the muted look in your image */
+    opacity: 0.7;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+/* Optional: Slight color reveal on hover */
+.badge-item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    .security-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .badge-item img {
+        height: 35px;
+    }
+}
