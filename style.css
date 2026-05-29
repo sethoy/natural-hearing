@@ -393,3 +393,33 @@ body {
         height: 35px;
     }
 }
+/* 1. Establish structural positioning on the body element */
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 2. Style the transparent click overlay block */
+.global-page-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Covers everything on the standard layout layer */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* 3. Elevate your forms, buttons, and telephone links above the hidden overlay */
+form,
+form input,
+form select,
+form button,
+header .cta-section a,
+.footer-phone,
+.footer-socials a,
+.footer-links a {
+    position: relative;
+    z-index: 20; /* Sits completely on top of the overlay link layer */
+}
